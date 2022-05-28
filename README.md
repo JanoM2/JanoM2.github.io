@@ -1,1 +1,2 @@
-# JanoM2.github.io
+# DOM-Exercises
+Practicando manipular el DOM con ejercicios
