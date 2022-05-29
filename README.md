@@ -47,7 +47,7 @@
     <button class="theme">🌙</button>
 
     <!-- Flecha hacia Arriba -->
-    <a class="flecha hidden" href="#tituloindex">🔝</a>
+    <a class="flecha hidden" href="#tituloindex">↥</a>
 
     <!-- Modo Online y Offline -->
     <div class="connection"></div>
