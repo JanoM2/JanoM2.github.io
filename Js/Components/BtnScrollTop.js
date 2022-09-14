@@ -2,7 +2,7 @@ export function BtnScrollTop() {
   const $body = document.querySelector("body"),
     $scrollTop = document.createElement("a");
   $scrollTop.classList = "scrollTop hidden";
-  $scrollTop.textContent = "⬆";
+  $scrollTop.innerHTML = "<div class='arrow-5'></div>";
 
   window.addEventListener("scroll", () => {
     let limite = $body.getBoundingClientRect();
