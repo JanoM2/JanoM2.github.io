@@ -98,15 +98,15 @@ export default function EducCurso() {
       <a target="_blank" href="https://www.freecodecamp.org/certification/Jano_Martino/javascript-algorithms-and-data-structures">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
-      <img class="eduCursos--certified-img" src="/assets/certified/certified 2.PNG" alt="certified">
+      <img class="eduCursos--certified-img" src="/assets/certified/certified 2.png" alt="certified">
       <a target="_blank" href="https://drive.google.com/file/d/1DmIml9twB8KwPUHEr7BHgUzG-l-yLRDX/view">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
-      <img class="eduCursos--certified-img" src="/assets/certified/certified 3.PNG" alt="certified">
+      <img class="eduCursos--certified-img" src="/assets/certified/certified 3.png" alt="certified">
       <a target="_blank" href="https://drive.google.com/file/d/1KAG0kVZZk0KvTlnWuS3g-l8o5vi4K9jA/view">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
-      <img class="eduCursos--certified-img" src="/assets/certified/certified 4.PNG" alt="certified">
+      <img class="eduCursos--certified-img" src="/assets/certified/certified 4.png" alt="certified">
       <a target="_blank" href="https://drive.google.com/file/d/1nSRPDILrsIFm9_JJTyq6lRyIobOPACMZ/view">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
