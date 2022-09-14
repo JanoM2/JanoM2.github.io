@@ -133,22 +133,24 @@ a {
 }
 
 .arrow-5 {
-  position: relative;
-  height: 0px;
   width: 0px;
+  height: 0px;
+  position: relative;
   border: 12px solid;
-  border-color: var(--fourth-color) var(--fourth-color) transparent transparent;
   transform: rotate(-45deg);
+  transition: var(--my-transition);
+  border-color: var(--fourth-color) var(--fourth-color) transparent transparent;
 }
 
 .arrow-5:before {
+ position: absolute;
+  display: block;
   content: "";
-  position: absolute;
   top: 0px;
   right: 0px;
-  display: block;
-  height: 12px;
   width: 16px;
+  height: 12px;
+  transition: var(--my-transition);
   background-color: var(--fourth-color);
   transform: rotate(-45deg) translate(2px, 1px);
 }
