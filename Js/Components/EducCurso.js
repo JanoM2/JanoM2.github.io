@@ -110,15 +110,15 @@ export default function EducCurso() {
       <a target="_blank" href="https://drive.google.com/file/d/1nSRPDILrsIFm9_JJTyq6lRyIobOPACMZ/view">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
-      <img class="eduCursos--certified-img" src="/assets/certified/certified 5.PNG" alt="certified">
+      <img class="eduCursos--certified-img" src="/assets/certified/certified 5.png" alt="certified">
       <a target="_blank" href="https://www.efset.org/cert/aG7wp5">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
-      <img class="eduCursos--certified-img" src="/assets/certified/certified 6.PNG" alt="certified">
+      <img class="eduCursos--certified-img" src="/assets/certified/certified 6.png" alt="certified">
       <a target="_blank" href="https://www.futurelearn.com/certificates/gj5n72d">Enlace al Certificado</a>
     </figure>
     <figure class="eduCursos--certified ">
-      <img class="eduCursos--certified-img" src="/assets/certified/certified 7.PNG" alt="certified">
+      <img class="eduCursos--certified-img" src="/assets/certified/certified 7.png" alt="certified">
       <a target="_blank" href="https://www.futurelearn.com/certificates/kmqgugg">Enlace al Certificado</a>
     </figure>
 
