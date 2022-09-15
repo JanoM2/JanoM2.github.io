@@ -170,11 +170,6 @@ a {
     display: flex;
   }
 
-  .scrollTop {
-    width: 60px;
-    font-size: 4rem;
-  }
-
   .header--menu {
     position: fixed;
     top: 0;
