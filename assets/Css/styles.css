@@ -170,6 +170,10 @@ a {
     display: flex;
   }
 
+  .scrollTop {
+    padding: 18px;
+  }
+  
   .header--menu {
     position: fixed;
     top: 0;
