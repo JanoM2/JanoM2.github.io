@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #cb092a;
+  --secondary-color: rgb(240, 240, 240);
+  --third-color: rgb(17, 16, 16);
+  --fourth-color: rgba(33, 33, 33);
+  --my-transition: 0.6s;
+}
+
+.contact-form {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.contact-form > * {
+  width: 90%;
+  display: block;
+  transition: 1s;
+  padding: 1.5rem;
+  margin: 30px auto;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.contact-form-response {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  background-color: green;
+  transition: var(--my-transition);
+}
+
+.contact-form-response .none {
+  display: none;
+}
+
+.contact-form *::placeholder {
+  color: rgb(248, 245, 245);
+  font-family: "Roboto Mono";
+  font-size: 1.5rem;
+}
+
+input[required]:valid {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border-bottom: thin solid green;
+}
+
+.contact-form > input {
+  border: none;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid rgb(227, 220, 64);
+}
+
+textarea[required]:valid {
+  border: thin solid green;
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0.4;
+}
+
+input[required]:invalid,
+textarea[required]:invalid {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border-bottom: thin solid rgb(227, 220, 64);
+}
+
+.contact-form-error {
+  margin-top: -30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--third-color);
+  transition: all 1s ease;
+  background-color: rgb(255, 74, 74);
+}
+
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.contactBtn {
+  width: 180px;
+  padding: 5px;
+  font-size: 2rem;
+  margin: 20px auto 0px auto;
+  font-weight: bold;
+  border-radius: 70px;
+  justify-content: center;
+  color: var(--secondary-color);
+  transition: var(--my-transition);
+  background-color: var(--fourth-color);
+  border: 2px solid var(--primary-color);
+}
+
+.contactBtn:hover {
+  cursor: pointer;
+  color: var(--third-color);
+  transition: var(--my-transition);
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 10px 5px var(--third-color);
+}
+
+.error {
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.ldr {
+  position: sticky;
+  display: block;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  border-top: 8px solid var(--primary-color);
+  border-left: 8px solid var(--third-color);
+  border-right: 8px solid var(--third-color);
+  border-bottom: 8px solid var(--third-color);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.none {
+  display: none;
+}
