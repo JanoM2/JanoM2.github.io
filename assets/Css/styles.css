@@ -170,8 +170,22 @@ a {
     display: flex;
   }
 
-  .scrollTop {
+  .scrollTop,
+  .scrollTop:hover {
     padding: 18px;
+    color: var(--fourth-color);
+    background-color: var(--fifth-color);
+  }
+
+  .scrollTop:hover .arrow-5 {
+    transition: var(--my-transition);
+    border-color: var(--fourth-color) var(--fourth-color) transparent
+      transparent;
+  }
+
+  .scrollTop:hover .arrow-5::before {
+    transition: var(--my-transition);
+    background-color: var(--fourth-color);
   }
   
   .header--menu {
