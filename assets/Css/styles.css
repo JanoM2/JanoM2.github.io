@@ -388,6 +388,10 @@ hr {
     order: 2;
   }
 
+  .home--icons-container a {
+    color: var(--primary-color);
+  }
+
   .home--picture {
     width: 200px;
     height: 200px;
