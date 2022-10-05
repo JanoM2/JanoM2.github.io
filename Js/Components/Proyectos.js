@@ -52,6 +52,14 @@ export default function Proyectos() {
       "/assets/proyects/ig.png"
     )
   );
+  $article.appendChild(
+    Cards(
+      "proyectos",
+      "Who's That Pokemon?",
+      "https://game-whos-that-pokemon.netlify.app/",
+      "/assets/proyects/guess pokemon.png"
+    )
+  );
 
   $proyectos.appendChild($article);
 
