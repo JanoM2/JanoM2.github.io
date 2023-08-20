@@ -262,7 +262,7 @@ hr {
 /* Home */
 
 .home {
-  height: 100vh;
+  height: 130vh;
   display: grid;
   justify-content: center;
   grid-template-columns: 40% 60%;
