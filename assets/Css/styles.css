@@ -34,7 +34,7 @@ a {
 
 .loader {
   position: fixed;
-  z-index: 999;
+  z-index: 900;
   top: 50%;
   left: 50%;
   width: 60px;
@@ -42,9 +42,9 @@ a {
   border-radius: 50%;
   animation: spin 1.5s linear infinite;
   border-top: 8px solid var(--primary-color);
-  border-left: 8px solid var(--secondary-color);
-  border-right: 8px solid var(--secondary-color);
-  border-bottom: 8px solid var(--secondary-color);
+  border-left: 8px solid var(--third-color);
+  border-right: 8px solid var(--third-color);
+  border-bottom: 8px solid var(--third-color);
 }
 
 @keyframes spin {
@@ -262,7 +262,7 @@ hr {
 /* Home */
 
 .home {
-  height: 130vh;
+  height: 100vh;
   display: grid;
   justify-content: center;
   grid-template-columns: 40% 60%;
@@ -335,8 +335,8 @@ hr {
 }
 
 .home--icon > svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .home--btnDownload {
@@ -522,7 +522,7 @@ hr {
 }
 
 .eduCursos--cards img[alt="MiduDev"] {
-  width: 90%;
+  width: 100%;
   border-radius: 70px;
   background-color: var(--secondary-color);
 }
@@ -783,9 +783,12 @@ button[disabled]:hover {
   background-color: var(--primary-color);
 }
 
+.contacto--container svg {
+  color: var(--fourth-color);
+}
+
 .contacto--icon {
   padding: 10px;
-  color: var(--fourth-color);
 }
 
 .contacto--icon svg {
