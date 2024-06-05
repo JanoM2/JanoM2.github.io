@@ -681,6 +681,12 @@ button[disabled]:hover {
   transition: var(--my-transition);
 }
 
+#icon-nextjs > svg {
+  border-radius: 100%;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+
 .eduCursos--icon > svg:hover {
   transform: scale(1.5, 1.5);
 }
