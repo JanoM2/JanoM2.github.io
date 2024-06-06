@@ -84,7 +84,7 @@
                         <li class="sobreMi--li" data-aos="fade-right">Hola Mundo, soy <b>Jano</b>, tengo mas de 20 años y soy
                             <b>Desarrollador FrontEnd Autodidacta</b>. Soy una persona <b>proactiva</b>, <b>organizada y
                                 responsable</b>, con buenas relaciones interpersonales. Cuento con muchísimas ganas de
-                            <b>encontrar</b> mi primer oportunidad IT.
+                            <b>continuar</b> desarrollando mis habilidades como programador para algun dia convertime en <b>Full Stack Developer</b>.
                         </li>
                         <li class="sobreMi--li" data-aos="fade-left"><b>Me encanta programar</b> y la manera en que con
                             un
