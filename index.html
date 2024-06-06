@@ -262,6 +262,23 @@
                             </svg>
                         </span>
                         <span class="eduCursos--icon">
+                            <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <title>file_type_tailwind</title>
+                                <path
+                                    d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                                    style="fill:#44a8b3" />
+                            </svg>
+                        </span>
+                        <span class="eduCursos--icon">
+                            <div class="eduCursos--icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                                    <circle cx="24" cy="24" r="20" fill="#4db6ac" />
+                                    <path fill="#fff"
+                                        d="M33.357,21.5h-8.882c-0.187,0-0.308-0.198-0.222-0.365l5.03-9.745	c0.13-0.253-0.195-0.492-0.398-0.293l-14.2,13.974c-0.159,0.157-0.048,0.428,0.175,0.428H24.2c0.202,0,0.32,0.227,0.205,0.393	l-7.126,10.265c-0.17,0.245,0.154,0.528,0.374,0.327l15.873-14.55C33.694,21.78,33.585,21.5,33.357,21.5z" />
+                                </svg>
+                            </div>
+                        </span>
+                        <span class="eduCursos--icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="144px" height="144px"
                                 baseProfile="basic">
                                 <path fill="#f7df1e" d="M6,42V6h36v36H6z" />
