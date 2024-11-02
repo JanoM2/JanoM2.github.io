@@ -21,3 +21,6 @@ Email: martinojano0@gmail.com
 
 
 Linkedin: [linkedin.com/in/janomartino/](https://www.linkedin.com/in/janomartino/)
+
+
+![Portfolio](https://github.com/user-attachments/assets/01b9c680-fae2-44b9-8763-132691886771)
