@@ -291,7 +291,7 @@ hr {
   transition: var(--my-transition);
 }
 
-.home--picture:active {
+.home--picture.active {
   filter: grayscale(0%);
   transition: var(--my-transition);
 }
