@@ -4,7 +4,8 @@ import BtnScrollTop from "./Components/BtnScrollTop.js";
 import SobreMi from "./Components/SobreMi.js";
 import EducCurso from "./Components/EducCurso.js";
 import Proyectos from "./Components/Proyectos.js";
-import { ContactForm } from "../Js/Helpers/form.js";
+import IntervalHomePicture from "./Components/IntervalHomePicture.js"
+import ContactForm from "../Js/Helpers/form.js";
 
 export default function App() {
   setTimeout(() => {
@@ -19,4 +20,5 @@ export default function App() {
   EducCurso();
   Proyectos();
   ContactForm();
+  IntervalHomePicture()
 }

@@ -291,6 +291,11 @@ hr {
   transition: var(--my-transition);
 }
 
+.home--picture:active {
+  filter: grayscale(0%);
+  transition: var(--my-transition);
+}
+
 .home--title-container {
   display: flex;
   text-align: center;

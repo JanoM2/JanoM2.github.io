@@ -1,6 +1,4 @@
 export default function SobreMi() {
-  // mediaQuery
-
   document.addEventListener("scroll", async () => {
     const callback = (entries) => {
       entries.forEach((entry) => {
