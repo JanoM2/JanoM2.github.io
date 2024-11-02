@@ -17,10 +17,8 @@ Thank you for visiting my portfolio! I hope you enjoy exploring my projects and 
 📬 Contact
 
 
-Email: martinojano0@gmail.com
-
-
-Linkedin: [linkedin.com/in/janomartino/](https://www.linkedin.com/in/janomartino/)
+Email: martinojano0@gmail.com  
+Linkedin: [linkedin.com/in/janomartino/](https://www.linkedin.com/in/janomartino/)  
 
 
 ![Portfolio Mobile](https://github.com/user-attachments/assets/aade5655-a3c2-4583-b8c0-0ec65345bbac)
