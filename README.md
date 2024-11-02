@@ -11,5 +11,7 @@ Git: For version control and GitHub Pages for publishing the portfolio directly 
 Thank you for visiting my portfolio! I hope you enjoy exploring my projects and seeing how I’ve applied my skills across different developments.
 
 📬 Contact
-Email: [martinojano0@gmail.com](martinojano0@gmail.com)
+Email: martinojano0@gmail.com
+
+
 Linkedin: [linkedin.com/in/janomartino/](https://www.linkedin.com/in/janomartino/)
