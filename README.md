@@ -7,9 +7,9 @@
 
 I chose a classic and pure approach, without using frameworks or additional libraries, so for this portfolio, I used the following technologies:
 
-HTML5 and CSS3: For the structure and styling foundation.
-JavaScript: For interactivity and functionality.
-Git: For version control and GitHub Pages for publishing the portfolio directly from GitHub.
+HTML5 and CSS3: For the structure and styling foundation.  
+JavaScript: For interactivity and functionality.  
+Git: For version control and GitHub Pages for publishing the portfolio directly from GitHub.  
 Thank you for visiting my portfolio! I hope you enjoy exploring my projects and seeing how I’ve applied my skills across different developments.
 
 📬 Contact
