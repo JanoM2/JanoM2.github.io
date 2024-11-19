@@ -528,18 +528,19 @@ hr {
 }
 
 .eduCursos--cards img[alt="Jon Mircha"],
-.eduCursos--cards img[alt="Platzi"],
-.eduCursos--cards img[alt="EFSET"] .eduCursos--cards img[alt="MiduDev"] {
+.eduCursos--cards img[alt="Platzi"] {
   padding: 10px;
 }
 
 .eduCursos--cards img[alt="MiduDev"] {
   width: 100%;
+  padding: 10px;
   border-radius: 70px;
   background-color: var(--secondary-color);
 }
 
 .eduCursos--cards img[alt="EFSET"] {
+  padding: 10px;
   background-color: var(--secondary-color);
 }
 

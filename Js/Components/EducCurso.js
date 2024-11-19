@@ -28,7 +28,7 @@ document.addEventListener("click", (e) => {
   let figure = document.querySelectorAll(".eduCursos--certified");
 
   if (e.target.matches(".prev")) {
-    document.querySelector(".prev").style.color = "gray"
+    document.querySelector(".prev").style.color = "gray";
 
     document.querySelector(
       ".eduCursos--certified.activado"
@@ -46,10 +46,12 @@ document.addEventListener("click", (e) => {
     } else {
       document.querySelector(".prev").disabled = false;
     }
+    document.querySelector(".prev").style.color = "var(--fourth-color)";
   }
 
   if (e.target.matches(".next")) {
-    document.querySelector(".next").style.color = "gray"
+    document.querySelector(".next").style.color = "gray";
+
     figure[i].classList.remove("activado");
     i++;
     sum += 100;
@@ -65,5 +67,6 @@ document.addEventListener("click", (e) => {
     } else {
       document.querySelector(".next").disabled = false;
     }
+    document.querySelector(".prev").style.color = "var(--fourth-color)";
   }
 });
