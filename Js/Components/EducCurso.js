@@ -46,7 +46,7 @@ document.addEventListener("click", (e) => {
     } else {
       document.querySelector(".prev").disabled = false;
     }
-    document.querySelector(".prev").style.color = "var(--fourth-color)";
+    document.querySelector(".prev").style.color = "black";
   }
 
   if (e.target.matches(".next")) {
@@ -67,6 +67,6 @@ document.addEventListener("click", (e) => {
     } else {
       document.querySelector(".next").disabled = false;
     }
-    document.querySelector(".prev").style.color = "var(--fourth-color)";
+    document.querySelector(".next").style.color = "black";
   }
 });
