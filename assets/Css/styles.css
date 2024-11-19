@@ -597,7 +597,7 @@ button[disabled]:hover {
   cursor: initial;
   opacity: 0.5;
   border: transparent;
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
 }
 
 .eduCursos--certified img {
