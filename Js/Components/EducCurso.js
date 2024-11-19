@@ -28,6 +28,8 @@ document.addEventListener("click", (e) => {
   let figure = document.querySelectorAll(".eduCursos--certified");
 
   if (e.target.matches(".prev")) {
+    document.querySelector(".prev").style.color = "gray"
+
     document.querySelector(
       ".eduCursos--certified.activado"
     ).style.transform = `translateX(0%)`;
@@ -47,6 +49,7 @@ document.addEventListener("click", (e) => {
   }
 
   if (e.target.matches(".next")) {
+    document.querySelector(".next").style.color = "gray"
     figure[i].classList.remove("activado");
     i++;
     sum += 100;

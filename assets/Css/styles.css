@@ -527,6 +527,12 @@ hr {
   transition: var(--my-transition);
 }
 
+.eduCursos--cards img[alt="Jon Mircha"],
+.eduCursos--cards img[alt="Platzi"],
+.eduCursos--cards img[alt="EFSET"] .eduCursos--cards img[alt="MiduDev"] {
+  padding: 10px;
+}
+
 .eduCursos--cards img[alt="MiduDev"] {
   width: 100%;
   border-radius: 70px;
@@ -565,7 +571,7 @@ hr {
   font-size: 30px;
   position: absolute;
   border-radius: 10px;
-  border: 1px solid var(--fourth-color);
+  border: none;
   top: calc(50% - 30px);
   color: var(--fourth-color);
   background-color: var(--primary-color);
