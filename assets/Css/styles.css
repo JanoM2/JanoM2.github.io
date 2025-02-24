@@ -484,8 +484,10 @@ hr {
   background: var(--fourth-color);
 }
 
-.experience-img {
-  width: 100%;
+.experience--img {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
   height: 100%;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
@@ -505,16 +507,12 @@ hr {
   letter-spacing: 0.02em;
   padding: 5px;
   font-size: 2rem;
-  display: flex;
   margin: 20px auto;
-  border-radius: 70px;
   justify-content: center;
   color: var(--secondary-color);
-  transition: var(--my-transition);
-  background-color: var(--fourth-color);
 }
 
-.experience-fuente {
+.experience--fuente {
   display: flex;
   font-size: 18px;
   justify-content: center;
@@ -528,7 +526,7 @@ hr {
   border: 2px solid var(--primary-color);
 }
 
-.experience-fuente:hover {
+.experience--fuente:hover {
   color: var(--third-color);
   transition: var(--my-transition);
   background-color: var(--primary-color);
@@ -540,14 +538,13 @@ hr {
     font-size: 3rem;
   }
 
-  .experience--article,
-  .experience--ul {
+  .experience--article {
     padding: 0;
     border: none;
   }
 
-  .experience--li {
-    font-size: 2rem;
+  .experience--text {
+    font-size: 1.5rem;
   }
 }
 
