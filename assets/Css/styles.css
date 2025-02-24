@@ -499,7 +499,10 @@ hr {
 }
 
 .experience--text {
-  width: 70%;
+  max-width: 65ch;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 5px;
   font-size: 2rem;
   display: flex;
