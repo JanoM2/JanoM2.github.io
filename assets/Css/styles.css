@@ -173,7 +173,6 @@ a {
   .scrollTop,
   .scrollTop:hover {
     padding: 18px;
-    right: calc(10rem + 1vw);
     color: var(--fourth-color);
     background-color: var(--fifth-color);
   }
@@ -414,6 +413,7 @@ hr {
     width: 300px;
     border: none;
     order: 1;
+    border: 1px solid var(--fifth-color);
   }
 }
 
