@@ -107,7 +107,7 @@ a {
   position: fixed;
   cursor: pointer;
   border-radius: 100%;
-  right: calc(10rem + 1vw);
+  right: calc(3rem + 1vw);
   opacity: 1;
   bottom: 4vh;
   z-index: 999;
@@ -173,6 +173,7 @@ a {
   .scrollTop,
   .scrollTop:hover {
     padding: 18px;
+    right: calc(10rem + 1vw);
     color: var(--fourth-color);
     background-color: var(--fifth-color);
   }
