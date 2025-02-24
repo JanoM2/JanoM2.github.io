@@ -490,7 +490,13 @@ hr {
   width: 90%;
   height: 100%;
   border-radius: 10px;
+  transition: var(--my-transition);
   border: 1px solid var(--primary-color);
+}
+
+.experience--img:hover {
+  transform: scale(1.05);
+  transition: var(--my-transition);
 }
 
 .experience--article {
