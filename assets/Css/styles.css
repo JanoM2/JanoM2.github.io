@@ -502,17 +502,16 @@ hr {
   width: 70%;
   padding: 5px;
   font-size: 2rem;
-  display: none;
+  display: flex;
   margin: 20px auto;
   border-radius: 70px;
   justify-content: center;
   color: var(--secondary-color);
   transition: var(--my-transition);
   background-color: var(--fourth-color);
-  border: 2px solid var(--primary-color);
 }
 
-.experience--fuente {
+.experience-fuente {
   display: flex;
   font-size: 18px;
   justify-content: center;
@@ -526,7 +525,7 @@ hr {
   border: 2px solid var(--primary-color);
 }
 
-.experience--fuente:hover {
+.experience-fuente:hover {
   color: var(--third-color);
   transition: var(--my-transition);
   background-color: var(--primary-color);
