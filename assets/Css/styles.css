@@ -478,6 +478,55 @@ hr {
   }
 }
 
+/* Experience */
+
+.experience {
+  background: var(--fourth-color);
+}
+
+.experience--article {
+  padding: 50px 100px 100px 100px;
+  background-position: center;
+  background-repeat: space;
+  background-size: 450px;
+}
+.experience--text {
+  width: 70%;
+  padding: 5px;
+  font-size: 2rem;
+  display: none;
+  margin: 20px auto;
+  border-radius: 70px;
+  justify-content: center;
+  color: var(--secondary-color);
+  transition: var(--my-transition);
+  background-color: var(--fourth-color);
+  border: 2px solid var(--primary-color);
+}
+
+.experience--text:hover {
+  color: var(--third-color);
+  transition: var(--my-transition);
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 10px 5px var(--third-color);
+}
+
+@media screen and (max-width: 768px) {
+  * section > h1 {
+    font-size: 3rem;
+  }
+
+  .experience--article,
+  .experience--ul {
+    padding: 0;
+    border: none;
+  }
+
+  .experience--li {
+    font-size: 2rem;
+  }
+}
+
 /* Educacion/Cursos */
 
 /* Educacion/Cursos > Cursos */
