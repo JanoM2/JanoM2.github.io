@@ -1,49 +1,22 @@
-<<<<<<< HEAD
-# Portfolio - Estructura Organizada
+# Portfolio — Jano Martino
 
-## 📁 Estructura del Proyecto
+👋 Welcome to my portfolio! This site showcases some of the projects I've worked on, highlighting my skills and experience as a front-end developer.
 
-```
-src/
-├── components/          # Componentes React
-│   ├── Sidebar.jsx      # Barra lateral con WHO I AM
-│   ├── Experience.jsx   # Sección de experiencia
-│   ├── Projects.jsx     # Sección de proyectos
-│   ├── Education.jsx    # Sección de educación + carousel
-│   └── Contact.jsx      # Sección de contacto
-├── data/                # Datos e información
-│   ├── portfolio.js     # Datos del portfolio (name, skills, projects, etc)
-│   └── translations.js  # Traducciones EN/ES
-├── hooks/               # React Hooks personalizados
-│   └── useActiveSection.js  # Hook para detectar sección activa
-├── utils/               # Utilidades y constantes
-│   └── constants.js     # NAV_ITEMS, colores, etc
-└── App.jsx              # Componente principal
-```
+🔗 You can visit my portfolio by clicking the following link: [Portfolio Link](https://janom2.github.io)
 
-## 🎨 Ventajas de esta estructura
+## 🚀 Technologies Used
 
-✅ **Escalable** - Fácil agregar nuevas secciones  
-✅ **Mantenible** - Cambios isolados en cada archivo  
-✅ **Limpia** - Cada archivo tiene una responsabilidad  
-✅ **Reutilizable** - Componentes independientes  
+For this portfolio, I used the following technologies:
 
-## 📝 Cómo usar
+- **React**: For building a modular and interactive user interface.
+- **TypeScript**: For type-safe, maintainable code.
+- **HTML5 and CSS3**: For the structure and styling foundation.
+- **Vite**: For fast development and optimized production builds.
+- **Git**: For version control and **GitHub Pages** for publishing the portfolio directly from GitHub.
 
-1. Modificar datos → edita `src/data/portfolio.js`
-2. Agregar traducciones → edita `src/data/translations.js`
-3. Cambiar colores → edita `src/utils/constants.js`
-4. Modificar componentes → edita archivos en `src/components/`
-5. Cambiar estilos → busca el CSS en `src/App.jsx`
+Thank you for visiting my portfolio! I hope you enjoy exploring my projects and seeing how I've applied my skills across different developments.
 
-## 🚀 Para agregar una nueva sección
+## 📬 Contact
 
-1. Crear componente en `src/components/MiSeccion.jsx`
-2. Importar en `src/App.jsx`
-3. Agregar contenedor div en el JSX
-4. Agregar label en `src/data/translations.js`
-
-¡Listo para modificar!
-=======
-# JanoM2.github.io
->>>>>>> b8662dcb776b745ae8ff7f76a5c60149ac789670
+- **Email:** [martinojano0@gmail.com](mailto:martinojano0@gmail.com)
+- **LinkedIn:** [linkedin.com/in/janomartino](https://www.linkedin.com/in/janomartino/)

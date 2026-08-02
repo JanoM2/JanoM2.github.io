@@ -22,3 +22,7 @@ pnpm-debug.log*
 # OS
 .DS_Store
 Thumbs.db
+.gitignore
+public/assets/
+public/icons/
+public/images/
