@@ -1,0 +1,53 @@
+name: Deploy React Vite to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Descarga tu código
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Instala Node
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # Instala dependencias
+      - name: Install dependencies
+        run: npm ci
+
+      # Genera dist
+      - name: Build
+        run: npm run build
+
+      # Sube dist como artefacto
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+
+    steps:
+      # Publica la página
+      - name: Deploy
+        uses: actions/deploy-pages@v4
