@@ -1,0 +1,28 @@
+:root {
+  --bg: #efefef;
+  --surface: #ffffff;
+  --surface-hover: #fff7ed;
+  --border: #fed7aa;
+  --text: #292524;
+  --muted: #78716c;
+  --accent: #ea580c;
+  --accent-light: #ffedd5;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --accent-glow: rgba(234, 88, 12, 0.25);
+  --accent-ring: rgba(234, 88, 12, 0.18);
+  --badge-dot: #22c55e;
+}
+
+body[data-theme="dark"] {
+  --bg: #0e1532;
+  --surface: #1a294b;
+  --surface-hover: #273c6b;
+  --border: #2e4575;
+  --text: #dfdfdf;
+  --muted: #d8d7c7;
+  --accent: #f07a3a;
+  --accent-light: #2a1e14;
+  --nav-bg: rgba(14, 21, 50, 0.85);
+  --accent-glow: rgba(240, 122, 58, 0.25);
+  --accent-ring: rgba(240, 122, 58, 0.18);
+}

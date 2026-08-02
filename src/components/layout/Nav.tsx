@@ -1,0 +1,78 @@
+import { useState } from "react";
+import { NAV_ITEMS } from "../../utils/constants";
+import type { Lang, Theme, Translations } from "../../types";
+
+interface NavProps {
+  active: string;
+  lang: Lang;
+  setLang: (lang: Lang) => void;
+  t: Translations;
+  theme: Theme;
+  toggleTheme: () => void;
+}
+
+export function Nav({ active, lang, setLang, t, theme, toggleTheme }: NavProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleScrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setMobileMenuOpen(false);
+  };
+
+  return (
+    <nav className="nav">
+      <div
+        className="nav-logo"
+        title="Ir hacia Arriba"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        Jano Martino<span>.</span>
+      </div>
+
+      <div className="nav-links">
+        {NAV_ITEMS.map((item) => (
+          <div
+            key={item.id}
+            className={`nav-link ${active === item.id ? "active" : ""}`}
+            onClick={() => handleScrollToSection(item.id)}
+          >
+            {t.nav[item.key]}
+          </div>
+        ))}
+      </div>
+
+      <button
+        className="hamburger-btn icon-btn"
+        onClick={() => setMobileMenuOpen((prev) => !prev)}
+      >
+        {mobileMenuOpen ? "✕" : "☰"}
+      </button>
+
+      <div className="nav-actions">
+        <button
+          className="icon-btn lang-btn"
+          onClick={() => setLang(lang === "en" ? "es" : "en")}
+        >
+          {lang === "en" ? "ES" : "EN"}
+        </button>
+        <button className="icon-btn" onClick={toggleTheme}>
+          {theme === "dark" ? "☀️" : "🌙"}
+        </button>
+      </div>
+
+      {mobileMenuOpen && (
+        <div className="mobile-menu">
+          {NAV_ITEMS.map((item) => (
+            <div
+              key={item.id}
+              className={`nav-link ${active === item.id ? "active" : ""}`}
+              onClick={() => handleScrollToSection(item.id)}
+            >
+              {t.nav[item.key]}
+            </div>
+          ))}
+        </div>
+      )}
+    </nav>
+  );
+}
