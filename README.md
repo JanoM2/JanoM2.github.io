@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio - Estructura Organizada
 
 ## 📁 Estructura del Proyecto
@@ -43,3 +44,6 @@ src/
 4. Agregar label en `src/data/translations.js`
 
 ¡Listo para modificar!
+=======
+# JanoM2.github.io
+>>>>>>> b8662dcb776b745ae8ff7f76a5c60149ac789670
