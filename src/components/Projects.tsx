@@ -24,53 +24,55 @@ export function Projects({ data, t }: ProjectsProps) {
         {data.projects.map((p, i) => (
           <div
             key={i}
-            className="project-card-container"
+            className={`project-card-container${flipped[i] ? " is-flipped" : ""}`}
             onClick={() => toggleFlip(i)}
           >
-            <div className={`project-card ${flipped[i] ? "flipped" : ""}`}>
-              <div className="project-card-front">
-                <div className="click-to-discover">{t.clickToDiscover}</div>
-              </div>
-              <div className="project-card-back">
-                <div className="project-emoji">{p.emoji}</div>
-                {p.url ? (
-                  <div className="project-name with-link">
-                    {p.name} <span className="external-link-icon">↗</span>
-                  </div>
-                ) : (
-                  <div className="project-name">{p.name}</div>
-                )}
-                <div className="project-desc">{p.description}</div>
-                <div className="project-tech">
-                  {p.tech.map((tech) => (
-                    <span key={tech} className="tech-badge">
-                      {tech}
-                    </span>
-                  ))}
+            <div className="project-card-scale">
+              <div className={`project-card ${flipped[i] ? "flipped" : ""}`}>
+                <div className="project-card-front">
+                  <div className="click-to-discover">{t.clickToDiscover}</div>
                 </div>
-                <div className="project-links">
-                  {p.url && (
-                    <a
-                      href={p.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-btn primary"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {t.preview}
-                    </a>
+                <div className="project-card-back">
+                  <div className="project-emoji">{p.emoji}</div>
+                  {p.url ? (
+                    <div className="project-name with-link">
+                      {p.name} <span className="external-link-icon">↗</span>
+                    </div>
+                  ) : (
+                    <div className="project-name">{p.name}</div>
                   )}
-                  {p.code && (
-                    <a
-                      href={p.code}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-btn"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {t.code}
-                    </a>
-                  )}
+                  <div className="project-desc">{p.description}</div>
+                  <div className="project-tech">
+                    {p.tech.map((tech) => (
+                      <span key={tech} className="tech-badge">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="project-links">
+                    {p.url && (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link-btn primary"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {t.preview}
+                      </a>
+                    )}
+                    {p.code && (
+                      <a
+                        href={p.code}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link-btn"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {t.code}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

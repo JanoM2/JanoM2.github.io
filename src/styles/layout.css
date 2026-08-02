@@ -490,6 +490,14 @@
   cursor: pointer;
 }
 
+.project-card-container:not(.is-flipped) .project-card-scale {
+  animation: card-breathe-scale 2s ease-in-out infinite;
+}
+
+.project-card-scale {
+  transform-origin: center center;
+}
+
 .project-card {
   position: relative;
   width: 100%;
@@ -500,14 +508,25 @@
 }
 
 .project-card:not(.flipped) .project-card-front {
-  animation: card-breathe 2s ease-in-out infinite;
+  animation: card-breathe-border 2s ease-in-out infinite;
 }
 
 .project-card.flipped {
   transform: rotateY(180deg);
 }
 
-@keyframes card-breathe {
+@keyframes card-breathe-scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes card-breathe-border {
   0%,
   100% {
     border-color: var(--border);
