@@ -21,6 +21,7 @@ function EduCarousel({ data }: EduCarouselProps) {
   const slideStepRef = useRef(296);
   const indexRef = useRef(0);
   const hasDraggedRef = useRef(false);
+  const activePointerId = useRef<number | null>(null);
   const total = data.education.length;
   const items = [...data.education, ...data.education, ...data.education];
 
@@ -88,40 +89,39 @@ function EduCarousel({ data }: EduCarouselProps) {
     setIndex((prev) => prev - 1);
   };
 
-  const finishDrag = useCallback((e?: PointerEvent) => {
-    if (!isDraggingRef.current) return;
-
-    isDraggingRef.current = false;
-    setIsDragging(false);
-    setIsPaused(false);
-
-    if (wrapperRef.current && e?.pointerId !== undefined) {
-      try {
-        wrapperRef.current.releasePointerCapture(e.pointerId);
-      } catch {
-        /* pointer already released */
-      }
-    }
-
-    const delta = dragOffsetRef.current;
-    const step = slideStepRef.current;
-    const targetIndex = Math.round(dragStartIndex.current - delta / step);
-
-    setAnimated(true);
-    setDragOffset(0);
-    dragOffsetRef.current = 0;
-
-    if (targetIndex !== indexRef.current) {
-      setIndex(targetIndex);
-    }
-  }, []);
-
   const handlePointerMove = useCallback((e: PointerEvent) => {
-    if (!isDraggingRef.current) return;
+    if (
+      activePointerId.current !== null &&
+      e.pointerId !== activePointerId.current
+    ) {
+      return;
+    }
 
     const delta = e.clientX - dragStartX.current;
-    if (Math.abs(delta) > 5) hasDraggedRef.current = true;
 
+    if (!isDraggingRef.current) {
+      if (Math.abs(delta) <= 5) return;
+
+      const track = wrapperRef.current?.querySelector(".edu-carousel-track");
+      const card = track?.querySelector(".edu-card");
+      if (track && card instanceof HTMLElement) {
+        const gap = parseFloat(getComputedStyle(track).gap) || 0;
+        const measuredStep = card.offsetWidth + gap;
+        if (measuredStep > 0) {
+          slideStepRef.current = measuredStep;
+          setSlideStep(measuredStep);
+        }
+      }
+
+      isDraggingRef.current = true;
+      hasDraggedRef.current = true;
+      setIsDragging(true);
+      setIsPaused(true);
+      setAnimated(false);
+      wrapperRef.current?.setPointerCapture(e.pointerId);
+    }
+
+    e.preventDefault();
     dragOffsetRef.current = delta;
     setDragOffset(delta);
   }, []);
@@ -131,37 +131,50 @@ function EduCarousel({ data }: EduCarouselProps) {
       window.removeEventListener("pointermove", handlePointerMove);
       window.removeEventListener("pointerup", handlePointerUp);
       window.removeEventListener("pointercancel", handlePointerUp);
-      finishDrag(e);
+
+      if (!isDraggingRef.current) {
+        activePointerId.current = null;
+        return;
+      }
+
+      isDraggingRef.current = false;
+      setIsDragging(false);
+      setIsPaused(false);
+
+      if (wrapperRef.current && e.pointerId !== undefined) {
+        try {
+          wrapperRef.current.releasePointerCapture(e.pointerId);
+        } catch {
+          /* pointer already released */
+        }
+      }
+
+      const delta = dragOffsetRef.current;
+      const step = slideStepRef.current;
+      const targetIndex = Math.round(dragStartIndex.current - delta / step);
+
+      setAnimated(true);
+      setDragOffset(0);
+      dragOffsetRef.current = 0;
+
+      if (targetIndex !== indexRef.current) {
+        setIndex(targetIndex);
+      }
+
+      activePointerId.current = null;
     },
-    [finishDrag, handlePointerMove],
+    [handlePointerMove],
   );
 
   const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
     if (e.pointerType === "mouse" && e.button !== 0) return;
 
-    e.preventDefault();
-    e.currentTarget.setPointerCapture(e.pointerId);
-
-    const track = e.currentTarget.querySelector(".edu-carousel-track");
-    const card = track?.querySelector(".edu-card");
-    if (track && card instanceof HTMLElement) {
-      const gap = parseFloat(getComputedStyle(track).gap) || 0;
-      const measuredStep = card.offsetWidth + gap;
-      if (measuredStep > 0) {
-        slideStepRef.current = measuredStep;
-        setSlideStep(measuredStep);
-      }
-    }
-
-    isDraggingRef.current = true;
+    activePointerId.current = e.pointerId;
+    isDraggingRef.current = false;
     hasDraggedRef.current = false;
     dragStartX.current = e.clientX;
     dragStartIndex.current = indexRef.current;
     dragOffsetRef.current = 0;
-
-    setIsDragging(true);
-    setIsPaused(true);
-    setAnimated(false);
     setDragOffset(0);
 
     window.addEventListener("pointermove", handlePointerMove);
@@ -177,9 +190,11 @@ function EduCarousel({ data }: EduCarouselProps) {
     };
   }, [handlePointerMove, handlePointerUp]);
 
-  const handleCardClick = () => {
-    console.log("hasDraggedRef.current", hasDraggedRef, hasDraggedRef.current);
-    // if (hasDraggedRef.current) e.preventDefault();
+  const handleCardClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (hasDraggedRef.current) {
+      e.preventDefault();
+      hasDraggedRef.current = false;
+    }
   };
 
   return (

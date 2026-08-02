@@ -487,6 +487,7 @@
 
 .project-card-container {
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .project-card {
@@ -495,15 +496,28 @@
   height: 280px;
   border-radius: 12px;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:not(.flipped) {
-  animation: breathe 2s ease-in-out infinite;
+.project-card:not(.flipped) .project-card-front {
+  animation: card-breathe 2s ease-in-out infinite;
 }
 
 .project-card.flipped {
   transform: rotateY(180deg);
+}
+
+@keyframes card-breathe {
+  0%,
+  100% {
+    border-color: var(--border);
+    box-shadow: none;
+  }
+
+  50% {
+    border-color: var(--accent);
+    box-shadow: 2px 4px 10px 2px var(--accent-glow);
+  }
 }
 
 .project-card-front,
