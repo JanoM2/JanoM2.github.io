@@ -14,7 +14,7 @@ export function Experience({ data, t }: ExperienceProps) {
         {data.experience.map((exp, i) => (
           <div key={i} className="exp-card">
             <div className="exp-header">
-              <div>
+              <div className="exp-header-content">
                 <div className="exp-name">{exp.name}</div>
                 <div className="exp-role">{exp.role}</div>
                 <div className="exp-company">

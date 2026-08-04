@@ -2,7 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none !important;
+}
+
+@media (pointer: fine) {
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
 }
 
 html {
@@ -15,6 +22,8 @@ body {
   font-family: "Inter", system-ui, sans-serif;
   transition: background 0.3s, color 0.3s;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--bg);
 }
 
 a {
@@ -46,14 +55,10 @@ textarea {
   border-radius: 3px;
 }
 
-@media (max-width: 480px) {
-  * {
-    cursor: auto !important;
-  }
-
-  body,
-  html,
-  a {
+@media (pointer: coarse), (max-width: 480px) {
+  *,
+  *::before,
+  *::after {
     cursor: auto !important;
   }
 }

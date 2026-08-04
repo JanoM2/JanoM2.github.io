@@ -49,6 +49,7 @@
   justify-content: space-between;
   height: 64px;
   padding: 0 2rem;
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   background: var(--nav-bg);
@@ -192,7 +193,6 @@
 }
 
 .sidebar-avatar:hover {
-  transition: all 0.6s;
   filter: grayscale(1);
 }
 
@@ -252,26 +252,6 @@
   font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 500;
-}
-
-.sidebar-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.sidebar-text {
-  font-size: 0.8rem;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.sidebar-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
 }
 
 .skill-tag {
@@ -403,6 +383,12 @@
   margin-bottom: 0.5rem;
 }
 
+.exp-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .exp-name {
   font-size: 1.1rem;
   font-weight: 700;
@@ -455,6 +441,7 @@
   margin-bottom: 0.75rem;
   color: var(--muted);
   font-size: 0.85rem;
+  letter-spacing: 0.5px;
   line-height: 1.6;
 }
 
@@ -764,7 +751,6 @@
   object-fit: cover;
   display: block;
   -webkit-user-drag: none;
-  user-drag: none;
 }
 
 .edu-card-body {
