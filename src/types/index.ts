@@ -97,7 +97,9 @@ export interface Translations {
   email: string;
   message: string;
   send: string;
+  sending: string;
   sentMsg: string;
+  errorMsg: string;
   footer: string;
   locationLabel: string;
 }

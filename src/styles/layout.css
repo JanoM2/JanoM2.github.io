@@ -918,16 +918,28 @@
   transition: all 0.2s;
 }
 
-.btn-primary:hover {
+.btn-primary:hover:not(:disabled) {
   background: transparent;
   color: var(--accent);
   transform: translateY(-1px);
   box-shadow: 2px 4px 10px 2px var(--accent-glow);
 }
 
+.btn-primary:disabled {
+  opacity: 0.7;
+}
+
 .sent-msg {
   padding: 0.6rem;
   color: #22c55e;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-error {
+  padding: 0.6rem;
+  color: #ef4444;
   font-size: 0.85rem;
   font-weight: 600;
   text-align: center;
