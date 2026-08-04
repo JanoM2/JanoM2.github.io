@@ -650,8 +650,9 @@
 
 .edu-carousel-container {
   position: relative;
-  --edu-card-width: 280px;
-  --edu-slide-step: 296px;
+  --edu-card-width: 350px;
+  --edu-card-height: 380px;
+  --edu-slide-step: 365px;
 }
 
 .edu-carousel-wrapper {
@@ -693,9 +694,11 @@
 }
 
 .edu-card {
+  position: relative;
   display: block;
   flex-shrink: 0;
   width: var(--edu-card-width);
+  height: var(--edu-card-height);
   border: 2px solid var(--border);
   border-radius: 12px;
   background: var(--surface);
@@ -746,15 +749,25 @@
 }
 
 .edu-card img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 170px;
+  height: 100%;
   object-fit: cover;
+  object-position: top center;
   display: block;
   -webkit-user-drag: none;
 }
 
 .edu-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   padding: 1rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
 }
 
 .edu-org {
@@ -977,11 +990,8 @@
 
   .edu-carousel-container {
     --edu-card-width: 240px;
+    --edu-card-height: 300px;
     --edu-slide-step: 256px;
-  }
-
-  .edu-card img {
-    height: 140px;
   }
 
   .edu-arrow {
@@ -1025,11 +1035,8 @@
 
   .edu-carousel-container {
     --edu-card-width: 220px;
+    --edu-card-height: 280px;
     --edu-slide-step: 236px;
-  }
-
-  .edu-card img {
-    height: 120px;
   }
 
   .edu-arrow {

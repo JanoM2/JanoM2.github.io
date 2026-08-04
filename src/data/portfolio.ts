@@ -211,14 +211,12 @@ export const portfolioData: PortfolioData = {
   ],
 
   education: [
-    { name: "React + TypeScript", org: "Fernando Herrera / DevTalles", img: "/assets/images/certificates/certified-8.png", cert: "https://cursos.devtalles.com/certificates/brqcrwexcv" },
-    { name: "Next.js", org: "Fernando Herrera / DevTalles", img: "/assets/images/certificates/certified-9.png", cert: "https://cursos.devtalles.com/certificates/gcylouyoc7" },
-    { name: "JavaScript Algorithms & Data Structures", org: "freeCodeCamp", img: "/assets/images/certificates/certified-1.png", cert: "https://www.freecodecamp.org/certification/Jano_Martino/javascript-algorithms-and-data-structures" },
-    { name: "Certificado 2", org: "Curso", img: "/assets/images/certificates/certified-2.png", cert: "https://drive.google.com/file/d/1DmIml9twB8KwPUHEr7BHgUzG-l-yLRDX/view" },
-    { name: "Certificado 3", org: "Curso", img: "/assets/images/certificates/certified-3.png", cert: "https://drive.google.com/file/d/1KAG0kVZZk0KvTlnWuS3g-l8o5vi4K9jA/view" },
-    { name: "Certificado 4", org: "Curso", img: "/assets/images/certificates/certified-4.png", cert: "https://drive.google.com/file/d/1nSRPDILrsIFm9_JJTyq6lRyIobOPACMZ/view" },
+    { name: "TypeScript", org: "Fernando Herrera / DevTalles", img: "/assets/images/certificates/certified-10.png", cert: "https://cursos.devtalles.com/certificates/5w8vut3xgm" },
+    { name: "Nest", org: "Fernando Herrera / DevTalles", img: "/assets/images/certificates/certified-8.png", cert: "https://cursos.devtalles.com/certificates/brqcrwexcv" },
+    { name: "PostgreSQL", org: "Fernando Herrera / DevTalles", img: "/assets/images/certificates/certified-9.png", cert: "https://cursos.devtalles.com/certificates/gcylouyoc7" },
+    { name: "JavaScript Algorithms & Data Structures", org: "freeCodeCamp", img: "/assets/images/certificates/certified-1.png", cert: "https://www.freecodecamp.org/certification/jano_martino/javascript-algorithms-and-data-structures" },
     { name: "Inglés C1 (EF SET)", org: "EF Standard English Test", img: "/assets/images/certificates/certified-5.png", cert: "https://www.efset.org/cert/aG7wp5" },
-    { name: "Web Development", org: "FutureLearn", img: "/assets/images/certificates/certified-6.png", cert: "https://www.futurelearn.com/certificates/gj5n72d" },
-    { name: "Web Development 2", org: "FutureLearn", img: "/assets/images/certificates/certified-7.png", cert: "https://www.futurelearn.com/certificates/kmqgugg" },
+    { name: "Basic English 1: Elementary", org: "King's College London", img: "/assets/images/certificates/certified-6.png", cert: "https://www.futurelearn.com/certificates/gj5n72d" },
+    { name: "Basic English 2: Pre-Intermediate", org: "King's College London", img: "/assets/images/certificates/certified-7.png", cert: "https://www.futurelearn.com/certificates/kmqgugg" },
   ],
 };
