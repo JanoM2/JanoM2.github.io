@@ -64,11 +64,7 @@ export interface PortfolioViewData extends Omit<PortfolioData, "experience" | "p
 
 export interface Translations {
   available: string;
-  heroIntro: string;
-  heroRole: string;
   skillsLabel: string;
-  aboutTitle: string;
-  aboutMeSubtitle: string;
   aboutSideBar: string;
   aboutMeText: string[];
   nav: {
@@ -95,8 +91,6 @@ export interface Translations {
   contactMe: string;
   downloadCV: string;
   clickToDiscover: string;
-  present: string;
-  viewCert: string;
   preview: string;
   code: string;
   name: string;

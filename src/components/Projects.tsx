@@ -33,14 +33,16 @@ export function Projects({ data, t }: ProjectsProps) {
                   <div className="click-to-discover">{t.clickToDiscover}</div>
                 </div>
                 <div className="project-card-back">
-                  <div className="project-emoji">{p.emoji}</div>
-                  {p.url ? (
-                    <div className="project-name with-link">
-                      {p.name} <span className="external-link-icon">↗</span>
-                    </div>
-                  ) : (
-                    <div className="project-name">{p.name}</div>
-                  )}
+                  <div className="project-header">
+                    <div className="project-emoji">{p.emoji}</div>
+                    {p.url ? (
+                      <div className="project-name with-link">
+                        {p.name} <span className="external-link-icon">↗</span>
+                      </div>
+                    ) : (
+                      <div className="project-name">{p.name}</div>
+                    )}
+                  </div>
                   <div className="project-desc">{p.description}</div>
                   <div className="project-tech">
                     {p.tech.map((tech) => (

@@ -3,12 +3,8 @@ import type { Lang, Translations } from "../types";
 export const translations: Record<Lang, Translations> = {
   en: {
     available: "Available for work",
-    heroIntro: "Hi, I'm",
-    heroRole: "Frontend Developer — I build fast, accessible interfaces with a strong visual identity. I specialize in React and TypeScript.",
     skillsLabel: "Stack & tools",
-    aboutTitle: "Who I am",
-    aboutMeSubtitle: "A Little About Me",
-    aboutSideBar: "I'm Jano, a Frontend Developer focused on creating fast, accessible, and well-designed interfaces. I specialize in the React and TypeScript ecosystem, but I adapt quickly to new tools.",
+    aboutSideBar: "I'm Jano, a Full Stack Developer focused on creating fast, accessible, and well-designed interfaces. I specialize in the React and TypeScript ecosystem, but I adapt quickly to new tools.",
     aboutMeText: [
       "I love coding and the way you can do everything with a bit of code: from a nice design to something completely dynamic and interactive. My goal is could live off this.",
       "Outside of code, I'm a basketball fan and enjoy good horror and drama movies.",
@@ -37,8 +33,6 @@ export const translations: Record<Lang, Translations> = {
     contactMe: "Contact me",
     downloadCV: "Download CV",
     clickToDiscover: "Click to discover",
-    present: "Present",
-    viewCert: "View certificate ↗",
     preview: "Preview ↗",
     code: "Code",
     name: "Name",
@@ -51,12 +45,8 @@ export const translations: Record<Lang, Translations> = {
   },
   es: {
     available: "Disponible para trabajar",
-    heroIntro: "Hola, soy",
-    heroRole: "Desarrollador Frontend — construyo interfaces rápidas, accesibles y con identidad propia. Me especializo en React y TypeScript.",
     skillsLabel: "Stack & herramientas",
-    aboutTitle: "Quién soy",
-    aboutMeSubtitle: "Un Poco Sobre Mí",
-    aboutSideBar: "Soy Jano, Desarrollador Frontend con foco en crear interfaces rápidas, accesibles y con buen diseño. Me especializo en el ecosistema de React y TypeScript, pero me adapto rápido a nuevas herramientas.",
+    aboutSideBar: "Soy Jano, Desarrollador Full Stack con foco en crear interfaces rápidas, accesibles y con buen diseño. Me especializo en el ecosistema de React y TypeScript, pero me adapto rápido a nuevas herramientas.",
     aboutMeText: [
       "Me encanta programar y la manera en que con un poco de código se puede hacer de todo: desde un diseño bonito hasta algo totalmente dinámico e interactivo. Mi objetivo es poder vivir de esto que me gusta tanto.",
       "Fuera del código, soy fanático del básquet y disfruto de buenas pelis de terror y drama.",
@@ -84,8 +74,6 @@ export const translations: Record<Lang, Translations> = {
     period: "Presente",
     contactMe: "Contactame",
     downloadCV: "Descargar CV",
-    present: "Presente",
-    viewCert: "Ver certificado ↗",
     preview: "Preview ↗",
     code: "Código",
     name: "Tu nombre",
