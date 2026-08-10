@@ -22,6 +22,6 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 .gitignore
-public/assets/
-public/icons/
-public/images/
+# public/assets/
+# public/icons/
+# public/images/
