@@ -11,16 +11,19 @@ function pickLocalized(
 }
 
 export function getPortfolioViewData(lang: Lang): PortfolioViewData {
+  const { cv_es, cv_en, experience, projects, ...rest } = portfolioData;
+
   return {
-    ...portfolioData,
-    experience: portfolioData.experience.map(
+    ...rest,
+    cv: pickLocalized(lang, cv_es, cv_en) ?? cv_es,
+    experience: experience.map(
       ({ descriptionEn, url_name_es, url_name_en, ...item }) => ({
         ...item,
         url_name: pickLocalized(lang, url_name_es, url_name_en),
         description: lang === "en" ? descriptionEn : item.description,
       }),
     ),
-    projects: portfolioData.projects.map(({ descriptionEn, ...item }) => ({
+    projects: projects.map(({ descriptionEn, ...item }) => ({
       ...item,
       description: lang === "en" ? descriptionEn : item.description,
     })),

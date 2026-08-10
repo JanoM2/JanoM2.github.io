@@ -7,7 +7,8 @@ export const portfolioData: PortfolioData = {
   email: "martinojano0@gmail.com",
   github: "https://github.com/JanoM2",
   linkedin: "https://www.linkedin.com/in/janomartino/",
-  cv: "https://janom2.github.io/assets/Jano%20Martino%20-%20FrontEnd%20Dev%20en.pdf",
+  cv_es: "assets/resume/Jano%20Martino%20-%20FrontEnd%20Dev%20es.pdf",
+  cv_en: "assets/resume/Jano%20Martino%20-%20FrontEnd%20Dev%20en.pdf",
   profile_image: "/assets/images/profile.jpg",
   skills: [
     "TypeScript", "JavaScript", "HTML5", "CSS3",

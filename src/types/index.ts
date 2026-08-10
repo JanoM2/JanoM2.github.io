@@ -57,7 +57,8 @@ export interface PortfolioData {
   email: string;
   github: string;
   linkedin: string;
-  cv: string;
+  cv_es: string;
+  cv_en: string;
   profile_image: string;
   skills: string[];
   experience: ExperienceItem[];
@@ -75,7 +76,9 @@ export interface LocalizedProjectItem extends Omit<ProjectItem, "descriptionEn">
   description: string;
 }
 
-export interface PortfolioViewData extends Omit<PortfolioData, "experience" | "projects"> {
+export interface PortfolioViewData
+  extends Omit<PortfolioData, "experience" | "projects" | "cv_es" | "cv_en"> {
+  cv: string;
   experience: LocalizedExperienceItem[];
   projects: LocalizedProjectItem[];
 }
