@@ -44,6 +44,12 @@ export const translations: Record<Lang, Translations> = {
     errorMsg: "Something went wrong. Please try again.",
     footer: "© 2026 Jano Martino. Almost all rights reserved.",
     locationLabel: "Location",
+    technologies: "Technologies",
+    features: "Key features",
+    screenshots: "Screenshots",
+    highlights: "Highlights",
+    backToExperience: "Back",
+    experienceNotFound: "Experience not found",
   },
   es: {
     available: "Disponible para trabajar",
@@ -88,6 +94,12 @@ export const translations: Record<Lang, Translations> = {
     errorMsg: "Hubo un error. Intentá de nuevo.",
     footer: "© 2026 Jano Martino. Casi todos los derechos reservados.",
     locationLabel: "Ubicación",
+    technologies: "Tecnologías",
+    features: "Funcionalidades principales",
+    screenshots: "Capturas",
+    highlights: "Aspectos destacados",
+    backToExperience: "Volver",
+    experienceNotFound: "Experiencia no encontrada",
   },
 };
 

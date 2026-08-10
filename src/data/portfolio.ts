@@ -22,7 +22,9 @@ export const portfolioData: PortfolioData = {
       name: "Cerquetech Solutions",
       role: "Frontend Developer",
       period: "2023 - Presente",
-      url_name: "Finanzas Argy",
+      slug: "finanzas-argy",
+      url_name_es: "Finanzas Argy",
+      url_name_en: "Finanzas Argy",
       url: "https://www.finanzasargy.com/",
       description:
         "Implementé gráficos interactivos para visualizar la evolución histórica de las cotizaciones de distintas monedas utilizando TradingView Lightweight Charts, optimicé y amplié la sección de criptomonedas, desarrollé una sección de inversiones que muestra las tasas nominales anuales (TNA) ofrecidas por distintas entidades financieras y contribuí al desarrollo de nuevas funcionalidades y mejoras continuas de la plataforma.",
@@ -46,7 +48,9 @@ export const portfolioData: PortfolioData = {
       name: "MB Barbería",
       role: "Fullstack Developer - Freelance",
       period: "2026 - 2027",
-      url_name: "MB Barbería - Organizador de Caja",
+      slug: "mb-barberia",
+      url_name_es: "MB Barbería - Gestor de Caja",
+      url_name_en: "MB Barbería - Cash Management System",
       url: "https://control-caja-barberia.vercel.app/",
       description:
         "Desarrollé desde 0 un sistema de gestión de caja para una barbería utilizando React, TypeScript y Supabase, participando en todo el ciclo de desarrollo, desde el análisis de requerimientos hasta el despliegue en producción. Implementé autenticación y autorización basada en roles (administrador y barbero), restringiendo el acceso a funcionalidades según los permisos de cada usuario. También desarrollé la gestión de ingresos y egresos, el cálculo automático del total diario de caja, filtros por rango de fechas y un panel con métricas financieras. Además, integré Row Level Security (RLS) para proteger la información, desarrollé soporte para funcionamiento offline/online mediante DexieDB y LocalStorage para garantizar la continuidad del trabajo sin conexión y desplegué la aplicación en Vercel.",
@@ -71,7 +75,9 @@ export const portfolioData: PortfolioData = {
       name: "Cuchillos Camet",
       role: "Fullstack Developer - Freelance",
       period: "2025 - 2026",
-      url_name: "Cuchillos Camet - Ecommerce",
+      slug: "cuchillos-camet",
+      url_name_es: "Cuchillos Camet - Tienda Online",
+      url_name_en: "Cuchillos Camet - Ecommerce",
       url: "https://cuchilloscamet.com.ar/",
       description:
         "Desarrollé un e-commerce de productos de campo utilizando WordPress y WooCommerce, participando en la configuración, personalización y puesta en producción de la tienda. Partí de una plantilla de Astra y realicé modificaciones de diseño y funcionalidades para adaptarla a los requerimientos del cliente. Implementé la gestión de productos, categorías, métodos de pago mediante Mercado Pago e integración de envíos con Correo Argentino. Además, desarrollé personalizaciones utilizando HTML, CSS, JavaScript y PHP mediante Code Snippets para extender las funcionalidades de WooCommerce y mejorar la experiencia de compra.",
@@ -95,7 +101,9 @@ export const portfolioData: PortfolioData = {
       name: "MB Barberia",
       role: "Fullstack Developer - Freelance",
       period: "2026 - 2027",
-      url_name: "MB Barbería - Plataforma Educativa",
+      slug: "mb-barberia-academy",
+      url_name_es: "MB Barbería - Plataforma Educativa",
+      url_name_en: "MB Barbería - Educational Platform",
       url: "https://darkgray-flamingo-319830.hostingersite.com/",
       description:
         "Desarrollé una plataforma educativa para la venta de cursos de barbería y colorimetría utilizando WordPress, WooCommerce y Tutor LMS. Implementé la venta de productos digitales, gestión de usuarios y acceso personalizado a los cursos, permitiendo que cada alumno acceda al contenido adquirido desde su perfil. Además, personalicé la experiencia de usuario, adapté la plataforma a los requerimientos del negocio e implementé soluciones mediante HTML, CSS, JavaScript y PHP. Integré métodos de pago mediante Nave para completar el proceso de compra.",

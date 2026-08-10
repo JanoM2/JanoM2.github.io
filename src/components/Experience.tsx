@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { PortfolioViewData, Translations } from "../types";
 
 interface ExperienceProps {
@@ -18,7 +19,14 @@ export function Experience({ data, t }: ExperienceProps) {
                 <div className="exp-name">{exp.name}</div>
                 <div className="exp-role">{exp.role}</div>
                 <div className="exp-company">
-                  {exp.url ? (
+                  {exp.slug && exp.url_name ? (
+                    <Link
+                      to={`/experience/${exp.slug}`}
+                      className="exp-company-link"
+                    >
+                      {exp.url_name}
+                    </Link>
+                  ) : exp.url && exp.url_name ? (
                     <a
                       href={exp.url}
                       target="_blank"

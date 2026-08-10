@@ -10,11 +10,27 @@ export interface ExperienceItem {
   name: string;
   role: string;
   period: string;
-  url_name?: string;
+  slug?: string;
+  url_name_es?: string;
+  url_name_en?: string;
   url?: string;
   description: string;
   descriptionEn: string;
   tech: string[];
+}
+
+export interface ExperienceDetail {
+  title: string;
+  titleEn: string;
+  description: string;
+  descriptionEn: string;
+  technologies: string[];
+  features: string[];
+  featuresEn: string[];
+  highlights: string[];
+  highlightsEn: string[];
+  images: string[];
+  url?: string | null;
 }
 
 export interface ProjectItem {
@@ -49,8 +65,10 @@ export interface PortfolioData {
   education: EducationItem[];
 }
 
-export interface LocalizedExperienceItem extends Omit<ExperienceItem, "descriptionEn"> {
+export interface LocalizedExperienceItem
+  extends Omit<ExperienceItem, "descriptionEn" | "url_name_es" | "url_name_en"> {
   description: string;
+  url_name?: string;
 }
 
 export interface LocalizedProjectItem extends Omit<ProjectItem, "descriptionEn"> {
@@ -102,6 +120,12 @@ export interface Translations {
   errorMsg: string;
   footer: string;
   locationLabel: string;
+  technologies: string;
+  features: string;
+  screenshots: string;
+  highlights: string;
+  backToExperience: string;
+  experienceNotFound: string;
 }
 
 export interface CursorPosition {
