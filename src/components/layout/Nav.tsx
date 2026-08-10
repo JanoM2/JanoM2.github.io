@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { NAV_ITEMS } from "../../utils/constants";
+import { goToSection } from "../../utils/goToSection";
 import type { Lang, Theme, Translations } from "../../types";
 
 interface NavProps {
@@ -13,9 +15,11 @@ interface NavProps {
 
 export function Nav({ active, lang, setLang, t, theme, toggleTheme }: NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   const handleScrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    goToSection(navigate, pathname, id);
     setMobileMenuOpen(false);
   };
 
@@ -24,7 +28,7 @@ export function Nav({ active, lang, setLang, t, theme, toggleTheme }: NavProps) 
       <div
         className="nav-logo"
         title="Ir hacia Arriba"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => goToSection(navigate, pathname)}
       >
         Jano Martino<span>.</span>
       </div>

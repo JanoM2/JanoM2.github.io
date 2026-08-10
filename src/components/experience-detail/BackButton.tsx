@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { goToSection } from "../../utils/goToSection";
 import type { Translations } from "../../types";
 
 interface BackButtonProps {
@@ -7,18 +8,14 @@ interface BackButtonProps {
 
 export function BackButton({ t }: BackButtonProps) {
   const navigate = useNavigate();
-
-  const handleBack = () => {
-    navigate("/");
-    window.setTimeout(() => {
-      document.getElementById("experiencia")?.scrollIntoView({
-        behavior: "smooth",
-      });
-    }, 50);
-  };
+  const { pathname } = useLocation();
 
   return (
-    <button type="button" className="exp-detail-back" onClick={handleBack}>
+    <button
+      type="button"
+      className="exp-detail-back"
+      onClick={() => goToSection(navigate, pathname, "experiencia")}
+    >
       ← {t.backToExperience}
     </button>
   );
