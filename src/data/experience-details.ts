@@ -111,7 +111,7 @@ export const EXPERIENCE_DETAILS: Record<string, ExperienceDetail> = {
       "/assets/images/experience/mbbarberia/mbbarberia7.png",
       "/assets/images/experience/mbbarberia/mbbarberia8.png",
     ],
-    url: "https://imgur.com/a/aQ0wrNS",
+    url: "https://imgur.com/a/gestor-de-caja-mb-barberia-6pnijiP",
   },
 
   "cuchillos-camet": {
