@@ -168,7 +168,7 @@ export const EXPERIENCE_DETAILS: Record<string, ExperienceDetail> = {
       "/assets/images/experience/cuchilloscamet/cuchilloscamet9.png",
       "/assets/images/experience/cuchilloscamet/cuchilloscamet10.png",
     ],
-    url: "https://cuchilloscamet.com.ar/",
+    // url: "https://cuchilloscamet.com.ar/",
   },
 
   "mb-barberia-academy": {
