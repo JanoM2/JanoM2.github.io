@@ -226,6 +226,6 @@ export const EXPERIENCE_DETAILS: Record<string, ExperienceDetail> = {
       "/assets/images/experience/colorimetria/colorimetria9.png",
       "/assets/images/experience/colorimetria/colorimetria10.png",
     ],
-    url: "https://darkgray-flamingo-319830.hostingersite.com/",
+    url: "https://mbbarberia.com/",
   },
 };
